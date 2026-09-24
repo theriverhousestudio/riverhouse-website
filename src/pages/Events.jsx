@@ -25,18 +25,18 @@ function formatMonthYear(dateStr) {
 
 function UpcomingCard({ event, delay }) {
   return (
-    <AnimatedSection delay={delay}>
-      <div className="bg-brown-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <AnimatedSection delay={delay} className="h-full">
+      <div className="bg-brown-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full min-h-[26rem] flex flex-col">
         <h3 className="font-sans text-2xl text-brown-50 mb-2">{event.name}</h3>
         <p className="text-brown-300 text-sm font-medium mb-1">{event.dateDisplay || formatDate(event.date)}{event.time ? ` · ${event.time}` : ''}</p>
         {event.venue && <p className="text-brown-300 text-sm font-medium mb-4">{event.venue}</p>}
-        <p className="text-brown-200 text-sm leading-relaxed mb-6">{event.description}</p>
+        <p className="text-brown-200 text-sm leading-relaxed mb-6 line-clamp-6">{event.description}</p>
         {event.ctaUrl && (
           <a
             href={event.ctaUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-brown-700 text-brown-50 px-6 py-3 rounded-full text-sm font-medium uppercase tracking-wider hover:bg-brown-600 transition-colors duration-300"
+            className="inline-block bg-brown-700 text-brown-50 px-6 py-3 rounded-full text-sm font-medium uppercase tracking-wider hover:bg-brown-600 transition-colors duration-300 mt-auto self-start"
           >
             {event.ctaLabel}
           </a>
