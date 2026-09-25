@@ -106,7 +106,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-brown-200 text-sm font-medium uppercase tracking-[0.2em] mb-6"
+            className="text-[#ddc3b0] text-sm font-medium uppercase tracking-[0.2em] mb-6"
           >
             Welcome to The River House studio
           </motion.p>
@@ -114,7 +114,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
-            className="font-sans text-[54px] md:text-[64px] font-semibold leading-tight mb-6 text-brown-50"
+            className="font-sans text-[54px] md:text-[64px] font-semibold leading-tight mb-6 text-[#faf8f6]"
           >
             Strength.
             <br />
@@ -126,7 +126,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="text-lg md:text-xl max-w-[640px] mx-auto mb-20 leading-loose text-brown-100"
+            className="text-lg md:text-xl max-w-[640px] mx-auto mb-20 leading-loose text-[#f0e6de]"
           >
             Barking Riverside's first Pilates &amp; yoga studio.
           </motion.p>
@@ -140,7 +140,7 @@ export default function Home() {
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 rounded-full text-sm font-medium uppercase tracking-wider transition-colors duration-300 bg-brown-100 text-brown-900 hover:bg-brown-50"
+              className="inline-block px-8 py-4 rounded-full text-sm font-medium uppercase tracking-wider transition-colors duration-300 bg-[#f0e6de] text-[#2e2015] hover:bg-[#faf8f6]"
             >
               Book a Class
             </a>
@@ -178,18 +178,18 @@ export default function Home() {
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
-          <div className="w-6 h-10 border-2 border-brown-300 rounded-full flex items-start justify-center pt-2">
-            <div className="w-1.5 h-1.5 bg-brown-300 rounded-full" />
+          <div className="w-6 h-10 border-2 border-[#c49f86] rounded-full flex items-start justify-center pt-2">
+            <div className="w-1.5 h-1.5 bg-[#c49f86] rounded-full" />
           </div>
         </motion.div>
       </section>
 
-      {/* Classes — always a light "paper" section, like the hero video is always dark, so the page doesn't invert to a dark card in light mode */}
-      <section className="py-24 px-6 bg-[#faf8f6]">
+      {/* Classes */}
+      <section className="py-24 px-6 bg-brown-900">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
-            <p className="text-[#6c4a38] text-sm font-medium uppercase tracking-[0.2em] mb-3">Our Classes</p>
-            <h2 className="font-sans text-4xl md:text-5xl text-[#2e2015] font-semibold">Move With Intention</h2>
+            <p className="text-brown-300 text-sm font-medium uppercase tracking-[0.2em] mb-3">Our Classes</p>
+            <h2 className="font-sans text-4xl md:text-5xl text-brown-50 font-semibold">Move With Intention</h2>
           </AnimatedSection>
 
           <motion.div
@@ -205,26 +205,26 @@ export default function Home() {
                 variants={fadeUp}
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
-                className="group bg-[#faf8f6] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300"
+                className="group bg-brown-800 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300"
               >
-                <span className="text-xs font-medium uppercase tracking-wider text-[#533829] bg-[#f0e6de] px-3 py-1 rounded-full">
+                <span className="text-xs font-medium uppercase tracking-wider text-brown-100 bg-brown-700 px-3 py-1 rounded-full">
                   {c.level}
                 </span>
-                <h3 className="font-sans text-2xl text-[#2e2015] mt-5 mb-2">{c.name}</h3>
-                <p className="text-[#2e2015]/80 text-sm leading-relaxed mb-4">{c.description}</p>
-                <p className="text-[#2e2015]/80 text-sm font-medium">{c.time}</p>
+                <h3 className="font-sans text-2xl text-brown-50 mt-5 mb-2">{c.name}</h3>
+                <p className="text-brown-200 text-sm leading-relaxed mb-4">{c.description}</p>
+                <p className="text-brown-200 text-sm font-medium">{c.time}</p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* Instructors — always a light "paper" section, see note above */}
-      <section className="py-24 px-6 bg-[#faf8f6]">
+      {/* Instructors */}
+      <section className="py-24 px-6 bg-brown-900">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
-            <p className="text-[#6c4a38] text-sm font-medium uppercase tracking-[0.2em] mb-3">Meet The Team</p>
-            <h2 className="font-sans text-4xl md:text-5xl text-[#2e2015] font-semibold">Meet Your Instructors</h2>
+            <p className="text-brown-300 text-sm font-medium uppercase tracking-[0.2em] mb-3">Meet The Team</p>
+            <h2 className="font-sans text-4xl md:text-5xl text-brown-50 font-semibold">Meet Your Instructors</h2>
           </AnimatedSection>
 
           <motion.div
@@ -238,26 +238,26 @@ export default function Home() {
               <motion.div
                 key={inst.name}
                 variants={fadeUp}
-                className="bg-[#faf8f6] rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-brown-800 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-[#f0e6de] flex items-center justify-center">
-                  <span className="text-[#533829] font-sans text-2xl font-semibold">{inst.name[0]}</span>
+                <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-brown-700 flex items-center justify-center">
+                  <span className="text-brown-100 font-sans text-2xl font-semibold">{inst.name[0]}</span>
                 </div>
-                <h3 className="font-sans text-xl text-[#2e2015] mb-1">{inst.name}</h3>
-                <p className="text-[#6c4a38] text-sm font-medium mb-3">{inst.role}</p>
-                <p className="text-[#2e2015]/80 text-sm leading-relaxed">{inst.bio}</p>
+                <h3 className="font-sans text-xl text-brown-50 mb-1">{inst.name}</h3>
+                <p className="text-brown-300 text-sm font-medium mb-3">{inst.role}</p>
+                <p className="text-brown-200 text-sm leading-relaxed">{inst.bio}</p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* Testimonials — always a light "paper" section, see note above */}
-      <section className="py-24 px-6 bg-[#faf8f6]">
+      {/* Testimonials */}
+      <section className="py-24 px-6 bg-brown-900">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <p className="text-[#AD8CC0] text-sm font-medium uppercase tracking-[0.2em] mb-3">Testimonials</p>
-            <h2 className="font-sans text-4xl md:text-5xl text-[#2e2015] font-semibold">Words From Our Community</h2>
+            <h2 className="font-sans text-4xl md:text-5xl text-brown-50 font-semibold">Words From Our Community</h2>
           </AnimatedSection>
 
           <motion.div
@@ -271,11 +271,11 @@ export default function Home() {
               <motion.div
                 key={t.name}
                 variants={fadeUp}
-                className="bg-[#faf8f6] rounded-2xl p-8 shadow-sm"
+                className="bg-brown-800 rounded-2xl p-8 shadow-sm"
               >
-                <div className="text-[#2e2015]/15 text-5xl font-sans leading-none mb-4">&ldquo;</div>
-                <p className="text-[#2e2015]/80 leading-relaxed mb-6">{t.text}</p>
-                <p className="text-[#2e2015] font-medium text-sm">{t.name} <span className="text-[#2e2015]/50 font-normal">({t.pronouns})</span></p>
+                <div className="text-brown-50/15 text-5xl font-sans leading-none mb-4">&ldquo;</div>
+                <p className="text-brown-200 leading-relaxed mb-6">{t.text}</p>
+                <p className="text-brown-50 font-medium text-sm">{t.name} <span className="text-brown-300 font-normal">({t.pronouns})</span></p>
               </motion.div>
             ))}
           </motion.div>

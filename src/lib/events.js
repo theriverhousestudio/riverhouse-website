@@ -49,8 +49,8 @@ export const events = [
     time: '7:00pm - 9:00pm',
     venue: 'Mason & Fifth, Westbourne Park',
     description: "Something a little different this month. Kit brings his live dating podcast, to Mason & Fifth in Westbourne Park. He's joined by theCollective founder, Mel Labiran, for a night of real stories and real conversation. Expect candid chat, a few laughs, and a curious crowd. Pull up a seat, bring a friend — if you're intrigued, we'd love to have you there.",
-    ctaLabel: 'Register Interest',
-    ctaUrl: 'mailto:hello.riverhousestudio@gmail.com?subject=Stay%20Slick%20Live%20Podcast%20Show%20-%20Register%20Interest&body=Hi%20River%20House%20Studio%20team%2C%0D%0A%0D%0AI%20would%20love%20to%20register%20my%20interest%20for%20the%20Stay%20Slick%20live%20podcast%20show%20with%20Kit%20and%20Mel%20Labiran%20at%20Mason%20%26%20Fifth%20on%2020%20October.%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThank%20you!',
+    ctaLabel: 'Book',
+    ctaUrl: 'https://www.eventbrite.com/e/2002272739664?aff=oddtdtcreator',
   },
   {
     id: 'ariyani',

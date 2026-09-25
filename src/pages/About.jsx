@@ -27,7 +27,6 @@ export default function About() {
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-[50%_34%] opacity-45"
-          style={{ transform: 'scale(1.3) translateX(-15%)' }}
         />
         <div className="absolute inset-0 bg-brown-800/55" />
         <div className="relative z-10 max-w-6xl mx-auto">

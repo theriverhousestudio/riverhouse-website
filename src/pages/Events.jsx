@@ -51,9 +51,15 @@ function PastCard({ event, delay }) {
 
   return (
     <AnimatedSection delay={delay}>
-      <div className="bg-brown-800 rounded-2xl overflow-hidden shadow-sm">
+      <div className="group bg-brown-800 rounded-2xl overflow-hidden shadow-sm">
         {photo ? (
-          <img src={photo} alt={event.name} className="w-full h-64 object-cover" />
+          <div className="overflow-hidden">
+            <img
+              src={photo}
+              alt={event.name}
+              className="w-full h-64 object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+            />
+          </div>
         ) : (
           <div className="w-full h-64 bg-brown-700 flex items-center justify-center text-brown-400 text-sm">
             No photo yet
@@ -147,7 +153,7 @@ export default function Events() {
           <div className="max-w-6xl mx-auto">
             <AnimatedSection className="text-center mb-16">
               <p className="text-brown-300 text-sm font-medium uppercase tracking-[0.2em] mb-3">Past Events</p>
-              <h2 className="font-sans text-4xl md:text-5xl text-brown-50 font-semibold">Where We've Been</h2>
+              <h2 className="font-sans text-4xl md:text-5xl text-brown-50 font-semibold">What We've Been Up To</h2>
             </AnimatedSection>
 
             <div className="grid sm:grid-cols-2 gap-8">
