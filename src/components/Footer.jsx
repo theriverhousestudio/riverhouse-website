@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <h4 className="text-brown-50 font-medium mb-4 text-sm uppercase tracking-wider">Contact</h4>
           <div className="flex flex-col gap-2 text-sm">
-            <p>hello.riverhousestudio@gmail.com</p>
+            <a href="mailto:hello.riverhousestudio@gmail.com" className="hover:text-brown-50 transition-colors w-fit">hello.riverhousestudio@gmail.com</a>
             <p>Barking Riverside</p>
             <p>Tue & Thu: 6:30pm - 8:30pm</p>
           </div>
