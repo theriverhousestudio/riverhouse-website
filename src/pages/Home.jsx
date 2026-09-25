@@ -184,12 +184,12 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Classes */}
-      <section className="py-24 px-6 bg-brown-50">
+      {/* Classes — always a light "paper" section, like the hero video is always dark, so the page doesn't invert to a dark card in light mode */}
+      <section className="py-24 px-6 bg-[#faf8f6]">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
-            <p className="text-brown-600 text-sm font-medium uppercase tracking-[0.2em] mb-3">Our Classes</p>
-            <h2 className="font-sans text-4xl md:text-5xl text-brown-900 font-semibold">Move With Intention</h2>
+            <p className="text-[#6c4a38] text-sm font-medium uppercase tracking-[0.2em] mb-3">Our Classes</p>
+            <h2 className="font-sans text-4xl md:text-5xl text-[#2e2015] font-semibold">Move With Intention</h2>
           </AnimatedSection>
 
           <motion.div
@@ -205,26 +205,26 @@ export default function Home() {
                 variants={fadeUp}
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
-                className="group bg-brown-50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300"
+                className="group bg-[#faf8f6] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300"
               >
-                <span className="text-xs font-medium uppercase tracking-wider text-brown-700 bg-brown-100 px-3 py-1 rounded-full">
+                <span className="text-xs font-medium uppercase tracking-wider text-[#533829] bg-[#f0e6de] px-3 py-1 rounded-full">
                   {c.level}
                 </span>
-                <h3 className="font-sans text-2xl text-brown-900 mt-5 mb-2">{c.name}</h3>
-                <p className="text-brown-900/80 text-sm leading-relaxed mb-4">{c.description}</p>
-                <p className="text-brown-900/80 text-sm font-medium">{c.time}</p>
+                <h3 className="font-sans text-2xl text-[#2e2015] mt-5 mb-2">{c.name}</h3>
+                <p className="text-[#2e2015]/80 text-sm leading-relaxed mb-4">{c.description}</p>
+                <p className="text-[#2e2015]/80 text-sm font-medium">{c.time}</p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* Instructors */}
-      <section className="py-24 px-6 bg-brown-50">
+      {/* Instructors — always a light "paper" section, see note above */}
+      <section className="py-24 px-6 bg-[#faf8f6]">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
-            <p className="text-brown-600 text-sm font-medium uppercase tracking-[0.2em] mb-3">Meet The Team</p>
-            <h2 className="font-sans text-4xl md:text-5xl text-brown-900 font-semibold">Meet Your Instructors</h2>
+            <p className="text-[#6c4a38] text-sm font-medium uppercase tracking-[0.2em] mb-3">Meet The Team</p>
+            <h2 className="font-sans text-4xl md:text-5xl text-[#2e2015] font-semibold">Meet Your Instructors</h2>
           </AnimatedSection>
 
           <motion.div
@@ -238,26 +238,26 @@ export default function Home() {
               <motion.div
                 key={inst.name}
                 variants={fadeUp}
-                className="bg-brown-50 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-[#faf8f6] rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-brown-100 flex items-center justify-center">
-                  <span className="text-brown-700 font-sans text-2xl font-semibold">{inst.name[0]}</span>
+                <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-[#f0e6de] flex items-center justify-center">
+                  <span className="text-[#533829] font-sans text-2xl font-semibold">{inst.name[0]}</span>
                 </div>
-                <h3 className="font-sans text-xl text-brown-900 mb-1">{inst.name}</h3>
-                <p className="text-brown-600 text-sm font-medium mb-3">{inst.role}</p>
-                <p className="text-brown-900/80 text-sm leading-relaxed">{inst.bio}</p>
+                <h3 className="font-sans text-xl text-[#2e2015] mb-1">{inst.name}</h3>
+                <p className="text-[#6c4a38] text-sm font-medium mb-3">{inst.role}</p>
+                <p className="text-[#2e2015]/80 text-sm leading-relaxed">{inst.bio}</p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 px-6 bg-brown-50">
+      {/* Testimonials — always a light "paper" section, see note above */}
+      <section className="py-24 px-6 bg-[#faf8f6]">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <p className="text-[#AD8CC0] text-sm font-medium uppercase tracking-[0.2em] mb-3">Testimonials</p>
-            <h2 className="font-sans text-4xl md:text-5xl text-brown-900 font-semibold">Words From Our Community</h2>
+            <h2 className="font-sans text-4xl md:text-5xl text-[#2e2015] font-semibold">Words From Our Community</h2>
           </AnimatedSection>
 
           <motion.div
@@ -271,11 +271,11 @@ export default function Home() {
               <motion.div
                 key={t.name}
                 variants={fadeUp}
-                className="bg-brown-50 rounded-2xl p-8 shadow-sm"
+                className="bg-[#faf8f6] rounded-2xl p-8 shadow-sm"
               >
-                <div className="text-brown-900/15 text-5xl font-sans leading-none mb-4">&ldquo;</div>
-                <p className="text-brown-900/80 leading-relaxed mb-6">{t.text}</p>
-                <p className="text-brown-900 font-medium text-sm">{t.name} <span className="text-brown-900/50 font-normal">({t.pronouns})</span></p>
+                <div className="text-[#2e2015]/15 text-5xl font-sans leading-none mb-4">&ldquo;</div>
+                <p className="text-[#2e2015]/80 leading-relaxed mb-6">{t.text}</p>
+                <p className="text-[#2e2015] font-medium text-sm">{t.name} <span className="text-[#2e2015]/50 font-normal">({t.pronouns})</span></p>
               </motion.div>
             ))}
           </motion.div>
